@@ -1,0 +1,30 @@
+{
+    "name": "booni3/reviews-io",
+    "description": "Reviews.io API Wrapper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Booni3",
+            "email": "adam@profilestudio.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Booni3\\ReviewsIo\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Booni3\\ReviewsIo\\ReviewsIoServiceProvider"
+            ],
+            "aliases": {
+                "ReviewsIo": "Booni3\\ReviewsIo\\ReviewsIoFacade"
+            }
+        }
+    }
+}
