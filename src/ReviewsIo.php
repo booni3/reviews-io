@@ -22,7 +22,7 @@ class ReviewsIo
      * @param string $store
      * @param string $api
      */
-    public function __construct(string $url, string $store, string $api)
+    public function __construct($url, $store, $api)
     {
         $this->url = $url;
         $this->store = $store;
