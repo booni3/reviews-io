@@ -79,7 +79,7 @@ class Client extends GuzzleClient
         return Middleware::mapRequest(function(RequestInterface $request) {
             return $request->withUri(Uri::withQueryValues($request->getUri(), [
                 'store' => $this->store,
-                'apikey' => $this->api
+                'apikey' => $this->api,
             ]));
         });
     }
