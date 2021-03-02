@@ -3,6 +3,7 @@
 namespace Booni3\ReviewsIo;
 
 use Booni3\ReviewsIo\Api\Merchant;
+use Booni3\ReviewsIo\Api\Product;
 
 class ReviewsIo
 {
@@ -45,6 +46,11 @@ class ReviewsIo
     public function merchant(): Merchant
     {
         return new Merchant($this->url, $this->store, $this->api);
+    }
+
+    public function product(): Product
+    {
+        return new Product($this->url, $this->store, $this->api);
     }
 
 }
